@@ -1618,6 +1618,9 @@ const randomIndex = Math.floor(Math.random() * flags.length);
 currentFlag = flags[randomIndex];
 document.getElementById("flagImage").src = currentFlag.imageUrl;
 document.getElementById("answerInput").value = "";
+const showButton = document.getElementById("showBtn");
+let defaultButton = "Auflösen";
+showButton.innerText = defaultButton;
 }
 
 function checkAnswer() {
