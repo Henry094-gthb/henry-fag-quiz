@@ -50,7 +50,7 @@ button {
     font-weight: bold;
     border: none;
     border-radius: 12px;
-    background:   linear-gradient(135deg,#2d2c2c, #29313c);
+    background: linear-gradient(135deg,#2d2c2c, #29313c);
     color: white;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -73,16 +73,9 @@ button {
     object-fit: contain;
 }
 
-@media (min-width: 768px) {
-    .image-container {
-        width: 350px;
-        height: 200px;
-    }
-}
-
 #feedBack {
     position: fixed;
-    top: 10px;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
     
@@ -123,7 +116,6 @@ button {
     content: "";
     width: 16px;
     height: 16px;
-    position: relative;
     display: inline-block;
     background:
         linear-gradient(#ef4444, #ef4444),
@@ -133,6 +125,30 @@ button {
     background-repeat: no-repeat;
     transform: rotate(45deg);
     box-shadow: 0 8px 25px rgba(208, 17, 17, 0.7);
+}
+
+@media (min-width: 768px) {
+    .image-container {
+        width: 350px;
+        height: 175px;
+    }
+
+    #feedBack {
+        position: fixed;
+         top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    
+        font-size: 20px;
+        z-index: 1000;
+
+        pointer-events: none;
+    }
 }
 
 </style>
