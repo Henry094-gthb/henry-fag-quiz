@@ -78,14 +78,24 @@ button {
         width: 350px;
         height: 175px;
     }
+
+     #feedBack {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+    }
 }
 
 #feedBack {
+    position: static;
+    transform: none;
+
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
 }
 
 #feedBack[hidden] {
